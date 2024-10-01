@@ -1,0 +1,155 @@
+.header {
+  background-color: #202020;
+  width: 100%;
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.topLeft {
+  display: flex;
+  gap: 20px;
+  flex: 1;
+}
+
+.topCenter {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.topRight {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+}
+
+.logo {
+  max-height: 50px;
+  width: auto;
+}
+
+.navMenu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.navMenu li a {
+  display: inline;
+}
+
+.navMenu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 5px 10px;
+}
+
+.navMenu a:hover {
+  color: #ff4757;
+}
+
+.searchIcon {
+  width: 20px;
+  height: 20px;
+  background: url('../../assets/search.png') no-repeat center center;
+  background-size: contain;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.navBar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.promoBanner {
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  background-color: black;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.disneyLogo {
+  height: 15px;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  .topBar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .topLeft,
+  .topRight {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .topCenter {
+    margin-bottom: 15px;
+  }
+
+  .navBar ul {
+    gap: 20px;
+  }
+
+  .logo {
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .topBar {
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 10px;
+  }
+
+  .topLeft,
+  .topRight {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .navMenu {
+    gap: 10px;
+  }
+
+  .logo {
+    height: 30px;
+  }
+
+  .navBar ul {
+    gap: 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .topBar {
+    padding: 10px 50px;
+  }
+
+  .navMenu a {
+    font-size: 16px;
+  }
+}
