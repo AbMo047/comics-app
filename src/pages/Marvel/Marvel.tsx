@@ -1,5 +1,3 @@
-/*eslint no-unused-vars: "off"*/
-
 import React from 'react';
 import ComicPreview from '../../components/ComicPreview/ComicPreview';
 import Form from '../../components/Form/Form';

@@ -25,22 +25,19 @@ const App: React.FC = () => {
   const [showWelcomeModal, setShowWelcomeModal] = useState(true);
 
   useEffect(() => {
-    console.log(showWelcomeModal);
+    const storedFavorites = localStorage.getItem('favoriteComics');
+    const storedComic = localStorage.getItem('selectedComic');
+    const storedBackgroundColor = localStorage.getItem('backgroundColor');
+    const storedMessage = localStorage.getItem('message');
     const isFirstVisit = localStorage.getItem('isFirstVisit');
+
     if (!isFirstVisit) {
       setShowWelcomeModal(true);
       localStorage.setItem('isFirstVisit', 'true');
     }
-
-    const storedFavorites = localStorage.getItem('favoriteComics');
     if (storedFavorites) {
       setFavoriteComics(JSON.parse(storedFavorites));
-    }
-
-    const storedComic = localStorage.getItem('selectedComic');
-    const storedBackgroundColor = localStorage.getItem('backgroundColor');
-    const storedMessage = localStorage.getItem('message');
-
+    }    
     if (storedComic) {
       setSelectedComic(JSON.parse(storedComic));
     }
@@ -55,7 +52,6 @@ const App: React.FC = () => {
   const handleCloseModal = () => {
     setShowWelcomeModal(false);
   };
-
   const setDefault = () => {
     setBackgroundColor('#ffffff');
     setTextColor('#000000');
