@@ -20,9 +20,9 @@ const App: React.FC = () => {
     '5px 5px 10px rgba(0, 0, 0, 0.5)',
   );
   const [message, setMessage] = useState<string>('');
-  const [favoriteComics, setFavoriteComics] = useState<Comic[]>([]);
+  const [favoriteComics, setFavoriteComics] = useState<Comic[]>([]); 
   const [successMessage, setSuccessMessage] = useState<string | null>(null);
-  const [showWelcomeModal, setShowWelcomeModal] = useState(true);
+  const [showWelcomeModal, setShowWelcomeModal] = useState(false);
 
   useEffect(() => {
     const storedFavorites = localStorage.getItem('favoriteComics');
