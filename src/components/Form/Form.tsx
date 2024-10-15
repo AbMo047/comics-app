@@ -73,6 +73,7 @@ const Form: React.FC<FormProps> = ({
 
       <label htmlFor="message">Message</label>
       <input
+      className={styles.message}
         id="message"
         type="text"
         value={message}
