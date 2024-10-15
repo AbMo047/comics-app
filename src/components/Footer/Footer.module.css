@@ -20,6 +20,8 @@
   display: flex;
   justify-content: space-between;
   flex-grow: 1;
+  flex-wrap: wrap;
+  max-width: 100%;
 }
 
 .footerMenu {
@@ -39,22 +41,26 @@
   transition: color 0.3s;
 }
 
-ul {
-  gap: 0px;
-}
-
 .footerMenu li a:hover {
   color: #f0141e;
 }
 
+ul {
+  gap: 0px;
+}
+
+
 .socialMedia {
   display: flex;
   gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .socialMedia li {
   list-style: none;
 }
+
 .socialMedia li a {
   color: #ddd;
   font-size: 1.5rem;

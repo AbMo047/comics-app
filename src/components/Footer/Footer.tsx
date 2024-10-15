@@ -71,6 +71,7 @@ const Footer = () => {
               ))}
             </ul>
           ))}
+          <div className={styles.socialMediaIcons}>
           <ul className={styles.socialMedia}>
             {socialMediaLinks.map((social, index) => (
               <li key={index}>
@@ -80,6 +81,7 @@ const Footer = () => {
               </li>
             ))}
           </ul>
+          </div>
         </div>
       </div>
       <div className={styles.footerBottom}>
