@@ -11,11 +11,12 @@ import {
   faSnapchat,
   faPinterest,
   faTiktok,
+  faXTwitter
 } from '@fortawesome/free-brands-svg-icons';
 
 const socialMediaLinks = [
   { href: 'https://www.facebook.com', icon: faFacebook },
-  { href: 'https://www.twitter.com', icon: faTwitter },
+  { href: 'https://www.x.com', icon: faXTwitter },
   { href: 'https://www.instagram.com', icon: faInstagram },
   { href: 'https://www.tumblr.com', icon: faTumblr },
   { href: 'https://www.youtube.com', icon: faYoutube },
